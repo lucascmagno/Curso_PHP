@@ -1,0 +1,34 @@
+h1, h2{
+    text-align: center;
+}
+div{
+    border: 1px solid;
+    width: 600px;
+    margin: auto;
+}
+textarea{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+input.enviar{
+    display: block;
+    margin: auto;
+    width: 300px;
+    border: none;
+    margin-bottom: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+input.enviar:hover{
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+div.comentario{
+    border: none;
+    text-align: center;
+}
+a{
+    margin-right: 20px;
+}
