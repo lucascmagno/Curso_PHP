@@ -47,6 +47,5 @@
 
     echo "<br><a href='index.php'>Home</a><br><br>";
 ?>
-<progress></progress>
 </body>
 </html>
