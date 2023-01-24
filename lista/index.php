@@ -24,5 +24,9 @@
         <?php include('tasks.php')?>
     </section>
     <span><hr></span>
+    <h3>Apagar tarefa</h3>
+    <form action="deleteTask.php" method="post">
+        <input type="submit" value="Apagar">
+    </form>
 </body>
 </html>

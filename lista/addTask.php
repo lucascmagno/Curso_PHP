@@ -17,8 +17,10 @@
         hora time,
         estado tinyint 
     )DEFAULT charset=utf8";
-
+    
     if($conn->query($sql) === TRUE){
+        
+    }else{
         echo "ERROR: " . $sql . $conn->error;
     }
 

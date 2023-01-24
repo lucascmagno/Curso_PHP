@@ -9,17 +9,22 @@
     }
 
     $sql = "SELECT nome FROM lista";
+
     if($conn->query($sql) === TRUE){
-        echo "Error: " . $sql . $conn->error;
+        //dado inserido com sucesso
+    }else{
+        //echo "Error: " . $sql . $conn->error;
     }
     $result = $conn->query($sql);
     if($result->num_rows > 0){
         //saida de dados por for each row
+        echo "<ul>";
         while($row = $result->fetch_assoc()){
             //echo "id: " . $row["id"] . " - Name: " . $row["nome"] . " " . $row["sobrenome"] . "<br>";
-            echo "<tr><ul><td><li>" .$row["nome"] . "</td></il></tr>";
+            echo "<li>" .$row["nome"];
             echo "<input type='checkbox' id='check'>";
         }
+        echo "</ul>";
     }else{
         echo "0 results";
     }
