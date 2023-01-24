@@ -8,6 +8,9 @@
 </head>
 <body>
     <a href="classFruta.php">classe em php</a><br>
-    <a href="construct.php">Construtor em php</a>
+    <a href="construct.php">Construtor em php</a><br>
+    <a href="destruct.php">destruct em php</a><br>
+    <a href="modificador_acesso.php">Modificador de acesso em php</a><br>
+    <a href="heranca.php">Herança em PHP</a>
 </body>
 </html>
