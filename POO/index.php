@@ -11,6 +11,8 @@
     <a href="construct.php">Construtor em php</a><br>
     <a href="destruct.php">destruct em php</a><br>
     <a href="modificador_acesso.php">Modificador de acesso em php</a><br>
-    <a href="heranca.php">Herança em PHP</a>
+    <a href="heranca.php">Herança em PHP</a><br>
+    <a href="constant.php">Constante em PHP</a><br>
+    <a href="abstract_class.php">classes abstratas em php</a>
 </body>
 </html>
