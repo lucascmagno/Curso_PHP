@@ -19,7 +19,10 @@
         <li><a href="constant.php" title="Constantes em php. ex: const car = 'Ford'">Constante em PHP</a></li>
         <li><a href="abstract_class.php" title="Classes abstratas em php">classes abstratas em php</a></li>
         <li><a href="interface.php" title="Interface de classes em php">Interface em PHP</a></li>
-        <a href="traits.php" title="">traits em PHP</a>
+        <li><a href="traits.php" title="Permite uma variação da herança múltipla, ou seja, uma classe pode herdar de duas classes ou mais">traits em PHP</a></li>
+        <li><a href="staticMethods.php" title="Métodos estáticos em PHP. Ex: class->method();">Métodos estáticos em PHP</a></li>
+        <li><a href="staticProperties.php" title="Propriedades estáticas em PHP. Ex: Class->$property;">Propriedades estáticas em PHP</a></li>
+        <li><a href="namespace.php" title=" permitem uma melhor organização agrupando classes que trabalham juntas para realizar uma tarefa e que o mesmo nome seja usado para mais de uma classe">namespaces em php</a></li>
     </ul>
 </body>
 </html>
