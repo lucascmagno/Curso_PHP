@@ -25,10 +25,11 @@
     }
 
     $nome = $_POST["nome"];
-
-    $sqlAdd = "INSERT INTO lista (nome) VALUES  ('$nome')";
-    if($conn->query($sqlAdd) === TRUE){
-        echo "ERROR: " . $sqlAdd . $conn->error;
+    if(strlen($nome) > 0){
+        $sqlAdd = "INSERT INTO lista (nome) VALUES  ('$nome')";
+        if($conn->query($sqlAdd) === TRUE){
+            echo "ERROR: " . $sqlAdd . $conn->error;
+        }
     }
     
     $conn->close();
