@@ -23,6 +23,7 @@
         <li><a href="staticMethods.php" title="Métodos estáticos em PHP. Ex: class->method();">Métodos estáticos em PHP</a></li>
         <li><a href="staticProperties.php" title="Propriedades estáticas em PHP. Ex: Class->$property;">Propriedades estáticas em PHP</a></li>
         <li><a href="namespace.php" title=" permitem uma melhor organização agrupando classes que trabalham juntas para realizar uma tarefa e que o mesmo nome seja usado para mais de uma classe">namespaces em php</a></li>
+        <li><a href="iterables.php">Iteráveis em PHP</a></li>
     </ul>
 </body>
 </html>
