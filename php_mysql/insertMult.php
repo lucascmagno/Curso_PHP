@@ -1,4 +1,5 @@
 <?php
+    //inserções múltiplas em php POO
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -25,4 +26,31 @@
     $conn->close();
 
     echo "<br><a href='index.php'>Home</a>"
+?>
+<?php
+    //inserções múltiplas em php PDO
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "teste";
+
+    try{
+        $conn = new PDO("mysql:host=$servername; dbname = $dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //begim transaction
+        $conn->beginTransaction();
+
+        //our instrção sql
+        $conn->exec("INSERT INTO convidados VALUES ('','Mary','Hollew', 'maryhollew@example.com','')");
+        $conn->exec("INSERT INTO convidados VALUES ('','Mary','Hollew', 'maryhollew@example.com','')");
+        $conn->exec("INSERT INTO convidados VALUES ('','Mary','Hollew', 'maryhollew@example.com','')");
+        
+        //commit a transação
+        $conn->commit();
+        echo "Novo registro criado com sucesso!";
+    }catch(PDOException $e){
+        echo "Error: " . $e->getMessage();
+    }
+
+    $conn = null;
 ?>

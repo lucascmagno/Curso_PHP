@@ -1,4 +1,5 @@
 <?php
+    //inserção de dados em php POO
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -21,4 +22,24 @@
     $conn->close();
 
     echo "<br><a href='index.php'>Home</a>";
+?>
+<?php
+    //inserção de dados em php PDO
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "teste";
+
+    try{
+        $conn = new PDO ("mysql:host=$servername; dbname =$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "INSERT INTO convidados VALUES ('','Lucas', 'Chagas', 'lucaschagas@gmail.com')";
+
+        $conn->exec($sql);
+        echo "Novo registro criado com sucesso!";
+    }catch(PDOException $e){
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+    $conn = null;
 ?>

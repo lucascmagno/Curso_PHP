@@ -16,7 +16,9 @@
     </style>
 </head>
 <body>
+    <h2>Seleção de dados com php POO</h2>
 <?php
+    //seleção com php POO
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -43,9 +45,54 @@
         echo "0 results";
     }
 
-    //$conn->close();
+    $conn->close();
+?><br><hr>
+<h2>Seleção de dados com php PDO</h2>
+<?php
+    //select em php PDO
+    echo "<table>";
+    echo "<tr><th>ID</th><th>Nome</th></tr>";
+    
+    class TableRows extends RecursiveIteratorIterator{
+        function __construct($it){
+            parent::__construct($it, self::LEAVES_ONLY);
+        }
 
-    echo "<br><a href='index.php'>Home</a><br><br>";
+        function current(){
+            return "<td>" . parent::current() . "</td>";
+        }
+
+        function beginChildren(){
+            echo "<tr>";
+        }
+
+        function endChildren(){
+            echo "</tr>" . "\n";
+        }
+    }
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "teste";
+
+    try{
+        $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $stmt = $conn->prepare("SELECT id, nome, sobrenome FROM convidados");
+        $stmt->execute();
+
+        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v){
+            echo $v;
+        }
+    }catch(PDOException $e){
+        echo "ERROR: " . $e->getMessage();
+    }
+    $conn = null;
+    echo "</table>";
+
+    echo "<br><a href='index.php'>Home</a>"
 ?>
 </body>
 </html>
