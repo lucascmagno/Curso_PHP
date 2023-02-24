@@ -16,6 +16,7 @@
     <a href="select.php">Select com php</a><br><br>
     <a href="connDB.php">Conexão com o banco de dados em php</a><br><br>
     <a href="where.php">Where em php</a><br><br>
-    <a href="orderBy.php">Ordem por</a>
+    <a href="orderBy.php">Ordem por</a><br><br>
+    <a href="deleteData.php">Delete Data com php</a>
 </body>
 </html>
