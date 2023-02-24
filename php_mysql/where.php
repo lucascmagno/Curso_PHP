@@ -42,4 +42,6 @@ try{
 
 $conn = null;
 echo "</table>";
+
+echo "<br><a href='index.php'>Home</a>"
 ?>
