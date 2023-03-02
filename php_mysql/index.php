@@ -17,6 +17,8 @@
     <a href="connDB.php">Conexão com o banco de dados em php</a><br><br>
     <a href="where.php">Where em php</a><br><br>
     <a href="orderBy.php">Ordem por</a><br><br>
-    <a href="deleteData.php">Delete Data com php</a>
+    <a href="deleteData.php">Delete Data com php</a><br><br>
+    <a href="updateData.php">Update data em php (Atualização de dados em php)</a><br><br>
+    <a href="limitData.php">Limit Data com php</a>
 </body>
 </html>
