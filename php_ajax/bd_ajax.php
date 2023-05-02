@@ -30,16 +30,19 @@
                 Selecione uma pessoa
             </option>
             <option value="1">
-                Peter Griffin
+                Lucas Chagas
             </option>
             <option value="2">
-                Lois Griffin
+                Lucas Doe
             </option>
             <option value="3">
-                Joseph Swanson
+                Luck Magno
             </option>
             <option value="4">
-                Glenn Quagmire
+                Luck Magno
+            </option>
+            <option value="10">
+                John Doe
             </option>
         </select>
         <br>
@@ -47,5 +50,7 @@
             <b>A pessoa informada não está listada aqui...</b>
         </div>
     </form>
+    <br>
+    <a href="index.php">Home</a>
 </body>
 </html>

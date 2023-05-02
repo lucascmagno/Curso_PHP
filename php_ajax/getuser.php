@@ -38,22 +38,17 @@
 <tr>
 <th>Nome</th>
 <th>Sobrenome</th>
-<th>Age</th>
-<th>Hometown</th>
-<th>Job</th>
+<th>email</th>
 </tr>";
 while($row = mysqli_fetch_array($result)) {
   echo "<tr>";
   echo "<td>" . $row['nome'] . "</td>";
   echo "<td>" . $row['sobrenome'] . "</td>";
-  echo "<td>" . $row['Age'] . "</td>";
-  echo "<td>" . $row['Hometown'] . "</td>";
-  echo "<td>" . $row['Job'] . "</td>";
+  echo "<td>" . $row['email'] . "</td>";
   echo "</tr>";
 }
 echo "</table>";
-mysqli_close($con);
+mysqli_close($conn);
     ?>
-
 </body>
 </html>

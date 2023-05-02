@@ -8,6 +8,7 @@
 </head>
 <body>
     <a href="ajax.php">Ajax em php Introdução</a><br><br>
-    <a href="bd_ajax.php">Banco de dados com ajax</a>
+    <a href="bd_ajax.php">Banco de dados com ajax</a><br><br>
+    <a href="ajax_xml.php ">Ajax + XML com php</a>
 </body>
 </html>
