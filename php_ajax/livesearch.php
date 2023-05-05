@@ -39,5 +39,5 @@
         $response= $hint;
     }
 
-    echo $response;
+    echo $response; 
 ?>

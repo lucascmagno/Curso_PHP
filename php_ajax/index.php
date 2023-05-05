@@ -11,6 +11,7 @@
     <a href="bd_ajax.php">Banco de dados com ajax</a><br><br>
     <a href="ajax_xml.php ">Ajax + XML com php</a>
     <br><br>
-    <a href="live_search.php">Live Search com php</a>
+    <a href="live_search.php">Live Search com php</a><br><br>
+    <a href="enquete.php">Enquete com php e ajax</a>
 </body>
 </html>
