@@ -10,5 +10,7 @@
     <a href="ajax.php">Ajax em php Introdução</a><br><br>
     <a href="bd_ajax.php">Banco de dados com ajax</a><br><br>
     <a href="ajax_xml.php ">Ajax + XML com php</a>
+    <br><br>
+    <a href="live_search.php">Live Search com php</a>
 </body>
 </html>
